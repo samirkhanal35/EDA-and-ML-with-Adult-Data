@@ -46,36 +46,52 @@ Where, std: standard deviation, OLB: Outlier Lower Boundary, OUB: Outlier Upper 
 <h4>4.	Feature Selection</h4><br/>
 The correlation between the features was calculated and rounded to the decimal point of two decimals. Heatmaps were created using the correlation data of all 15 columns. Four feature columns were selected by keeping the threshold of 20% correlation percentage. They are: ‘age’, ‘education-num’, ‘sex’, and ‘hours-per-week'. <br/><br/>
   
-Fig 1: Heatmap of correlations between the features
+![Heatmap of correlations between the features]
+(https://github.com/samirkhanal35/Income-Prediction-Using-Supervised-and-Unsupervised-Learning/blob/main/Heatmap.png)
   <br/><br/>
 <h4>5.	Data Visualization</h4><br/>
 The distribution of the target variable ‘Salary’ was visualized. Then, the distribution of each selected feature was visualized with a histogram plot along with their central tendency by using a Normal distribution graph.<br/><br/>
  
-Fig 2: Distribution of target variable
+![Distribution of target variable]
+(https://github.com/samirkhanal35/Income-Prediction-Using-Supervised-and-Unsupervised-Learning/blob/main/fig2.png)
  
-Fig 3: Data distribution of age
+
+![Data distribution of age]
+(https://github.com/samirkhanal35/Income-Prediction-Using-Supervised-and-Unsupervised-Learning/blob/main/fig3.png)
  
-Fig 4: Data distribution of education-num
+
+![Data distribution of education-num]
+(https://github.com/samirkhanal35/Income-Prediction-Using-Supervised-and-Unsupervised-Learning/blob/main/fig4.png)
+
+
+![Data distribution of hours-per-week]
+(https://github.com/samirkhanal35/Income-Prediction-Using-Supervised-and-Unsupervised-Learning/blob/main/fig5.png)
 
  
-Fig 5: Data distribution of hours-per-week
+![Normal distribution of age]
+(https://github.com/samirkhanal35/Income-Prediction-Using-Supervised-and-Unsupervised-Learning/blob/main/fig6.png)
 
  
-Fig 6: Normal distribution of age
+
+![Normal distribution of education-num]
+(https://github.com/samirkhanal35/Income-Prediction-Using-Supervised-and-Unsupervised-Learning/blob/main/fig7.png)
 
  
-Fig 7: Normal distribution of education-num
 
- 
-Fig 8: Normal distribution of sex
+![Normal distribution of sex]
+(https://github.com/samirkhanal35/Income-Prediction-Using-Supervised-and-Unsupervised-Learning/blob/main/fig8.png)
 
- 
-Fig 9: Normal distribution of hours-per-week
+
+![Normal distribution of hours-per-week]
+(https://github.com/samirkhanal35/Income-Prediction-Using-Supervised-and-Unsupervised-Learning/blob/main/fig9.png)
 
 <br/><br/>
 <h4>6.	Data Normalization </h4><br/>
 To normalize the data; the scaling data normalization method was applied to the feature columns of the dataset using the formula in equation (1).<br/>
-                   (1)
+
+![equation-1]
+(https://github.com/samirkhanal35/Income-Prediction-Using-Supervised-and-Unsupervised-Learning/blob/main/equation.png)
+        
 <br/><br/>
 <h3>	Data Modelling </h3> <br/>
 
@@ -91,16 +107,22 @@ The target variable was removed from the data, and other selected features were 
 
 A Gaussian Naïve Bayes model from scikit-learn was used to fit the data. The model gave 82.65% accuracy to the training dataset and 80.84% accuracy for the test dataset. The confusion matrix of the model for the test dataset is shown below. It has 6964 True Positives and 933 True Negatives, 1374 False Negatives, and 498 False Positives.<br/><br/>
  
-Fig 10: Model evaluation with confusion matrix
+![Model evaluation with confusion matrix]
+(https://github.com/samirkhanal35/Income-Prediction-Using-Supervised-and-Unsupervised-Learning/blob/main/confusion-matrix.png)
+
 <br/><br/>
 A KMeans model from scikit-learn was used to fit the data. We used different numbers of clusters to calculate the distortion and inertial of the model. In the elbow graph of both of them, the value of k at elbow is 2. So, the optimal number of clusters for this data is 2.<br/><br/>
 
  
 
-Fig 11: Elbow Method using Distortion Values
 
+![Elbow Method using Distortion Values]
+(https://github.com/samirkhanal35/Income-Prediction-Using-Supervised-and-Unsupervised-Learning/blob/main/Elbow_with_distortion.png)
  
-Fig 12: Elbow Method using Inertia Values
+
+![Elbow Method using Inertia Values]
+(https://github.com/samirkhanal35/Income-Prediction-Using-Supervised-and-Unsupervised-Learning/blob/main/Elbow_with_Inertia.png)
+
 <br/><br/>
 <h2>IV.	CONCLUSION</h2><br/>
 The two methods presented in this paper can process the data in Adult Data Dataset, clean data, deal with missing values and outliers, feature selection, normalization, visualization, modeling, training, and predicting the Salary whether less than 50K OR greater than 50K. <br/>
